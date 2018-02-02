@@ -1,0 +1,9 @@
+{
+  "name": "VoraknoTech",
+  "short_name": "VoraknoTech",
+  "theme_color": "#333333",
+  "background_color": "#333333",
+  "display": "fullscreen",
+  "scope": "/",
+  "start_url": "/"
+}
