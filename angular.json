@@ -138,9 +138,7 @@
   },
   "defaultProject": "Voraknotech",
   "cli": {
-    "warnings": {
-      "typescriptMismatch": false
-    },
+    "warnings": {},
     "analytics": "63dad691-def9-4030-9b7f-76826f269bf8"
   },
   "schematics": {
