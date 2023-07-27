@@ -1,25 +1,20 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
-import { ServiceWorkerModule } from "@angular/service-worker";
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-import { environment } from "../environments/environment";
-
-import { AppRoutingModule } from "./app-routing.module";
-import { SharedModule } from "./shared/shared.module";
-
-import { AppComponent } from "./app.component";
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent
+  ],
   imports: [
-    BrowserModule.withServerTransition({ appId: "dont-let-him-pou" }),
-    ServiceWorkerModule.register("/ngsw-worker.js", {
-      enabled: environment.production
-    }),
+    BrowserModule,
     AppRoutingModule,
-    SharedModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
